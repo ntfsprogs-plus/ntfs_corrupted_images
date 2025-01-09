@@ -4,9 +4,6 @@ These images are not repaired with previous fsck during test.
 
 
 ```
-1k_cluster_fsck_error/
-: 1k cluster size formatted images. test for device which has cluster smaller than 4K.
-
 attr_find_corrupt_inode/
 
 attr_value_offset_corrupted/
@@ -52,9 +49,6 @@ different_index_and_mft_flags/
 
 entry_length_corrupted/
 : corrupted index entry length of root.
-
-formatted_on_windows/
-: normal image which is formatted on windows.
 
 fsck_error_remain/
 : previous fsck can't repair image.
@@ -162,9 +156,6 @@ not_found_filename_tntfs_unplugged/ (deleted cause file size is too big)
   allocated size of index and mft are different.
   filename attribute does not exist.
   orphan inodes which has wrong sequenc number and has not filename attribute.
-
-orphaned_inode_cant_repair/
-: previous version of fsck cannot repair some case of orphaned inode.
 
 paragon_ntfs_test1/
 paragon_ntfs_test2/

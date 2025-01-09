@@ -8,6 +8,7 @@
 # $ENV from environment variable
 FSCK_PATH=${ENV:-"../../../src/"}
 RESULT_DIR="test_results"
+TEMP_RETURN="temp.log"
 
 TESTCASE_DIR=$1
 NEED_LOOPDEV=$2
@@ -30,6 +31,7 @@ cleanup() {
 	if [ -n "${COMP_LOGFILE}" ]; then
 		rmdir ${MNTPNT1} ${MNTPNT2}
 	fi
+	echo ${PASS_COUNT} ${TEST_COUNT} > ${TEMP_RETURN}
 	if [ ${PASS_COUNT} -ne ${TEST_COUNT} ]; then
 		exit 1
 	else
