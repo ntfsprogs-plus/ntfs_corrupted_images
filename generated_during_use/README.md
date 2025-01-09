@@ -22,6 +22,9 @@ attrlist_length_corrupted3/
 : attribute list length corrupted, and so many files missing filename attribute,
   has wrong sequence number.
 
+block_overflow_hole_file/
+: image which has hole file whose hole length is over max block clusters.
+
 cluster_duplication_one/
 : have only one cluster duplication.
 
